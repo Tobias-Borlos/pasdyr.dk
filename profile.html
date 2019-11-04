@@ -9,21 +9,45 @@
 <body>
     <section id="profile_info">
         <img src="gallery/profile.png" alt="profilepic">
+        <p>Navn:</p> 
+        <p>Jette Paulsen</p>
+        <button><img src="gallery/edit_symbol.png" alt="edit_symbol"></button>
     </section>
 
+    <!--a hidden menu-->
+    <section id="edit_profile_dropdown">
+        <p>E-mail:</p>
+        <p>Jettepaulsen@gmail.com</p>
 
-    <a href=""><section id="left">
-        <img src="gallery/man.png" alt="man">
-        <p>Pas dyr</p>
-    </section></a>
+        <p>Mobil:</p>
+        <p>33 33 33 33</p>
 
-    <a href="login.html"><section id="right">
-        <img src="gallery/petowner.jpg" alt="man_with_pet">
-        <p>Få dyr passet</p>
-    </section></a>
+        <p>Fødselsdag:</p>
+        <p>00 00 0000</p>
+
+        <p>Køn:</p>
+        <p>Andet</p>
+    </section>
+
+    <a href="mine-dyr.html"><img src="gallery/logo.png" alt="dyr"></a>
+    <h2>Mine dyr</h2>
+
+    <a href="beskseder.html"><img src="gallery/message_icon.png" alt="message icon"></a>
+    <h2>Besker</h2>
 
     <footer>
+            <button onclick="goBack()"><img src="gallery/back.png" alt="arrow"></button>
+            <script>
+                    function goBack() {
+                      window.history.back();
+                    }
+            </script>
+        
             <img src="gallery/logo.png" alt="logo">
+        
+            <a href="profile.html">
+            <img src="gallery/profile_icon.png" alt="profile_icon">
+            </a>
     </footer>
 </body>
 </html>
