@@ -1,7 +1,5 @@
 body {
     margin: 0 auto;
-    max-width: 800px;
-    padding: 0 20px;
   }
   
   .container {
@@ -9,7 +7,7 @@ body {
     background-color: #f1f1f1;
     border-radius: 5px;
     padding: 10px;
-    margin: 10px 0;
+    margin: 10px;
   }
   
   .darker {
@@ -45,4 +43,29 @@ body {
   .time-left {
     float: left;
     color: #999;
+  }
+
+  footer{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #000;
+  }
+
+  button {
+    background-color: white;
+    border: none;
+    border-right: solid black 1px
+  }
+
+  footer img {
+    max-width: 55px;
+    justify-self: center;
+    border-left: ;
+  }
+
+  img[alt="profile_icon"]{
+    border-left: 1px black solid;
   }
