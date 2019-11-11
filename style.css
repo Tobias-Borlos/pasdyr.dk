@@ -45,6 +45,7 @@ body {
     color: #999;
   }
 
+/* style of footer */
   footer{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
@@ -63,9 +64,68 @@ body {
   footer img {
     max-width: 55px;
     justify-self: center;
-    border-left: ;
   }
 
   img[alt="profile_icon"]{
     border-left: 1px black solid;
   }
+
+/* index.html styling */
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+#right img, #left img {
+  max-height: 526px;
+  margin-top: 100%;
+}
+
+#left {
+  background-color: #6adef4;
+  height: 1000vh;
+}
+
+#right {
+  background-color: #83c44e;
+  height: 1000vh;
+}
+
+#left p, #right p {
+  top: 450px;
+}
+
+#left p {
+  font-family: 'Permanent Marker', cursive;
+  color: white;
+  text-align: center;
+  font-size: 26px;
+  margin: 0;
+  position: absolute;
+  left: 12%;
+}
+
+#right p {
+  font-family: 'Permanent Marker', cursive;
+  color: white;
+  text-align: center;
+  font-size: 26px;
+  margin: 0;
+  position: absolute;
+  left: 53%;
+}
+
+a {
+  text-decoration: none;
+}
+  
+#frontpage_footer img {
+  grid-column: 2/3;
+  background-color: white;
+  border-radius: 19%;
+  margin-bottom: 1%;
+}
+#frontpage_footer {
+border-top: 0;
+}
