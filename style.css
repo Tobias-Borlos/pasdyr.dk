@@ -1,6 +1,11 @@
 body {
     margin: 0 auto;
+    font-family: 'Permanent Marker', cursive;
   }
+
+h1 {
+  margin: 0;
+}
   
   .container {
     border: 2px solid #dedede;
@@ -16,7 +21,6 @@ body {
   }
   
   .container::after {
-    content: "";
     clear: both;
     display: table;
   }
@@ -53,6 +57,7 @@ body {
     bottom: 0;
     width: 100%;
     border-top: 1px solid #000;
+    background-color: white;
   }
 
   button {
@@ -74,7 +79,7 @@ body {
 main {
   display: grid;
   grid-template-columns: 1fr 1fr;
-
+  height: 100vh
 }
 
 #right img, #left img {
@@ -84,12 +89,12 @@ main {
 
 #left {
   background-color: #6adef4;
-  height: 1000vh;
+  height: 100vh;
 }
 
 #right {
   background-color: #83c44e;
-  height: 1000vh;
+  height: 100vh;
 }
 
 #left p, #right p {
@@ -97,7 +102,6 @@ main {
 }
 
 #left p {
-  font-family: 'Permanent Marker', cursive;
   color: white;
   text-align: center;
   font-size: 26px;
@@ -107,7 +111,6 @@ main {
 }
 
 #right p {
-  font-family: 'Permanent Marker', cursive;
   color: white;
   text-align: center;
   font-size: 26px;
@@ -129,3 +132,104 @@ a {
 #frontpage_footer {
 border-top: 0;
 }
+
+/*styling of login.html*/
+
+header h1{
+  padding: 13vh 0px;
+  margin: 0;
+}
+
+
+h1 {
+  font-family: 'Permanent Marker', cursive;
+  color: black;
+  text-align: center;
+  font-size: 35px;
+
+}
+
+.opret {
+  background-color: #81ff92a6;
+  -webkit-transition: height .5s;
+}
+
+.opret.clicked {
+  height: 100vh;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  margin-left: 3%;
+}
+
+input {
+  margin: 0 6%;
+  font-size: 24px;
+  width: 85%;
+}
+
+#login_button a {
+  border: solid black 1px;
+  text-align: center;
+  font-size: 50px;
+  background-color: #6e7efa70;
+  color: white;
+  padding-left: 0;
+  padding: 8%;
+  border-radius: 5%;
+}
+
+input a {
+  padding-left: 60%;
+}
+
+input {
+  margin-bottom: 1%;
+}
+
+#login_button {
+  padding: 28%;
+}
+
+#login a {
+  padding-left: 50%;
+}
+
+/* styling of opretbruger */ 
+#opret_bruger {
+    background-color:#81ff9238;
+    height: 100vh;
+}
+
+#opret_bruger h1 { 
+  font-size: 24px;
+}
+
+#opret_bruger p {
+  font-size: 26px;
+  margin: 0;
+  padding-left: 2%;
+}
+
+#opret_bruger input {
+  margin-bottom: 7%;
+}
+
+#opret-knap {
+  padding: 28%;
+}
+
+#opret-knap a {
+  border: solid black 1px;
+  text-align: center;
+  font-size: 50px;
+  background-color:#25ff42a6;
+  color: white;
+  padding: 8%;
+  border-radius: 5%;
+}
+

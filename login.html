@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-1.10.1.js" integrity="sha256-663tSdtipgBgyqJXfypOwf9ocmvECGG8Zdl3q+tk+n0=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css"/>
     <title>Login</title>
 </head>
-<body>
-    <a href=""><header>
-        <h1>Opret bruger</h1>
-    </header></a>
+
+<body id="login_menu">
+    
+        <header>
+        <h1 class="opret" onclick="pageRedirect()">+ Opret bruger</h1> <!--rederect to opret_bruger.html-->
+        </header>
+   
     
 <section id="login">
     <h2>Login</h2>
@@ -18,11 +23,13 @@
     <input type="text">
     <h3>Adgangskode:</h3>
     <input type="text">
-    <a href="">Glemt adgangskode</a>
-    <button onclick="profile.html">
-        Login
-    </button>
+    <a href="glemt_adgangskode-html">Glemt adgangskode</a>
 </section>
+
+<section id="login_button">
+<a href="profile.html">Login</a>
+</section>
+
 
 <footer>
     <button onclick="goBack()"><img src="gallery/back.png" alt="arrow"></button>
@@ -31,13 +38,29 @@
               window.history.back();
             }
     </script>
-
     <img src="gallery/logo.png" alt="logo">
-
     <a href="profile.html">
     <img src="gallery/profile_icon.png" alt="profile_icon">
     </a>
     
 </footer>
+
+<script>
+    function pageRedirect(){
+ var delay = 200; 
+
+ 
+ setTimeout(function(){
+  window.location = "opret_bruger.html";
+ },delay);
+ 
+}
+</script>
+    
+    <script>
+        $('.opret').on('click', function() {
+            $(this).toggleClass('clicked');
+        });
+    </script>
 </body>
 </html>
