@@ -14,7 +14,7 @@
 
 
 
-<body>
+<body id="beskeder">
 <h2>Chat Messages</h2>
 
 <div class="container">
@@ -40,6 +40,25 @@
   <p>super jeg laver en kontrakt så</p>
   <span class="time-left">11:05</span>
 </div>
+
+<section class="aftale_popup" onclick="myFunction()">
+  <img src="gallery/aftale_knap.png" alt="håndslag">
+  <span class="popuptext" id="aftale_window"> 
+    <h3> Pasning af: </h3>
+    <h4>Fiddo</h4>
+    <p>Start: 15/11-2019 12:45</p>
+    <p>Slut: 15/11-2019 19:30</p>
+    <p>Løn: 100kr/t</p>
+    </span> 
+</section>
+
+<script>
+
+    function myFunction() {
+      var popup = document.getElementById("aftale_window");
+      popup.classList.toggle("visibility");
+    }
+    </script>
 
 <footer>
   <button onclick="goBack()"><img src="gallery/back.png" alt="arrow"></button>

@@ -5,38 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
     <title>Profile</title>
 </head>
 <body>
     <section id="profile_info">
         <img src="gallery/profile.png" alt="profilepic">
-        <p>Navn:</p> 
-        <p>Jette Paulsen</p>
-        <button><img src="gallery/edit_symbol.png" alt="edit_symbol"></button>
+        <p>Navn: Jette Paulsen</p> 
+        
+        <img src="gallery/edit_symbol.png" alt="edit_symbol" onclick="myFunction()">
     </section>
 
     <!--a hidden menu-->
+
     <section id="edit_profile_dropdown">
-        <p>E-mail:</p>
+        <h3>E-mail:</h3>
         <p>Jettepaulsen@gmail.com</p>
 
-        <p>Mobil:</p>
+        <h3>Mobil:</h3>
         <p>33 33 33 33</p>
 
-        <p>Fødselsdag:</p>
+        <h3>Fødselsdag:</h3>
         <p>00 00 0000</p>
 
-        <p>Køn:</p>
+        <h3>Køn:</h3>
         <p>Andet</p>
     </section>
 
+<!--a hidden menu end-->
+    <section id="menu">
     <a href="mine-dyr.html"><img src="gallery/logo.png" alt="dyr"></a>
     <h2>Mine dyr</h2>
 
-    <a href="beskseder.html"><img src="gallery/message_icon.png" alt="message icon"></a>
+    <a href="besked_oversigt.html"><img src="gallery/message_icon.png" alt="message icon"></a>
     <h2>Besker</h2>
+    </section>
 
-    <footer>
+     <footer>
             <button onclick="goBack()"><img src="gallery/back.png" alt="arrow"></button>
             <script>
                     function goBack() {
@@ -50,5 +55,19 @@
             <img src="gallery/profile_icon.png" alt="profile_icon">
             </a>
     </footer>
+
+    <script>
+        function myFunction() {
+        var x = document.getElementById("edit_profile_dropdown");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "block";
+        }
+        }
+
+        /* show/hide w3 school */
+    </script>
+
 </body>
 </html>
