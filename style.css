@@ -1,0 +1,587 @@
+body {
+    margin: 0 auto;
+    font-family: 'Permanent Marker', cursive;
+  }
+
+h1 {
+  margin: 0;
+}
+
+/* beskeder.html */
+
+  #beskeder .container {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 2vh;
+    margin: 3% auto;
+    padding-bottom: 7%;
+  }
+  
+  .darker {
+    border-color: #ccc;
+    background-color: #ddd;
+  }
+  
+  #beskeder .container::after {
+    clear: both;
+    display: table;
+  }
+  
+  #beskeder .container img {
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+  
+  #beskeder .container img.right {
+    float: right;
+    margin-left: 20px;
+    margin-right:0;
+  }
+  
+  .time-right {
+    float: right;
+    color: #aaa;
+  }
+  
+  .time-left {
+    float: left;
+    color: #999;
+  }
+
+  .aftale_popup {
+    float: right;
+    margin: 0 2vh;
+    
+  }
+
+  .aftale_popup img {
+    height: 13vh;
+    border-radius: 7vh;
+    box-shadow: 7px 7px 15px grey;
+    border: 4px solid forestgreen;
+  }
+
+  .aftale_popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+
+  }
+  #aftale_window {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+    bottom: 34%;
+    left: 37%;
+  }
+
+  .aftale_window .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+
+/* style of footer */
+  footer{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #000;
+    background-color: white;
+  }
+
+  button {
+    background-color: white;
+    border: none;
+    border-right: solid black 1px
+  }
+
+  footer img {
+    max-width: 55px;
+    justify-self: center;
+  }
+
+  img[alt="profile_icon"]{
+    border-left: 1px black solid;
+  }
+
+/* index.html styling */
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  min-width: 375;
+}
+
+#right img, #left img {
+  margin-top: 23vh;
+}
+
+
+#left {
+  background-color: #6adef4;
+  height: 100vh;
+  
+}
+
+#right {
+  background-color: #83c44e;
+  height: 100vh;
+}
+
+#left p, #right p {
+  top: 450px;
+}
+
+#left p {
+  color: white;
+  text-align: center;
+  font-size: 26px;
+  margin: 0;
+  position: absolute;
+  left: 12%;
+}
+
+#right p {
+  color: white;
+  text-align: center;
+  font-size: 26px;
+  margin: 0;
+  position: absolute;
+  left: 53%;
+}
+
+a {
+  text-decoration: none;
+}
+  
+#frontpage_footer img {
+  grid-column: 2/3;
+  background-color: white;
+  border-radius: 19%;
+  margin-bottom: 1%;
+}
+#frontpage_footer {
+border-top: 0;
+}
+
+/*styling of login.html*/
+
+header h1{
+  padding: 10vh 0px;
+  margin: 0;
+}
+
+
+h1 {
+  font-family: 'Permanent Marker', cursive;
+  color: black;
+  text-align: center;
+  font-size: 35px;
+
+}
+
+.opret {
+  background-color: #81ff92a6;
+  -webkit-transition: height .5s;
+}
+
+.opret.clicked {
+  height: 100vh;
+}
+
+/* styling of login section */
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  margin-left: 3%;
+}
+
+input {
+  margin: 0 6%;
+  font-size: 24px;
+  width: 85%;
+}
+
+#login_button a {
+  border: solid black 1px;
+  text-align: center;
+  font-size: 50px;
+  background-color: #6e7efa70;
+  color: white;
+  padding-left: 0;
+  padding: 8%;
+  border-radius: 5%;
+}
+
+input a {
+  padding-left: 60%;
+}
+
+input {
+  margin-bottom: 1%;
+}
+
+#login_button {
+  padding: 28%;
+}
+
+#login a {
+  padding-left: 50%;
+}
+
+/* styling of opret_bruger.html */ 
+#opret_bruger {
+    background-color:#81ff9238;
+    height: 100vh;
+}
+
+#opret_bruger h1 { 
+  font-size: 24px;
+}
+
+#opret_bruger p {
+  font-size: 26px;
+  margin: 0;
+  padding-left: 2%;
+}
+
+#opret_bruger input {
+  margin-bottom: 7%;
+}
+
+#opret-knap {
+  padding: 28%;
+}
+
+#opret-knap a {
+  border: solid black 1px;
+  text-align: center;
+  font-size: 50px;
+  background-color:#25ff42a6;
+  color: white;
+  padding: 8%;
+  border-radius: 5%;
+}
+
+/* profile.html styling */
+
+#profile_info {
+  display: flex; 
+  justify-content: space-around;
+  align-items: baseline;
+  padding-top: 2%;
+}
+
+#profile_info img{
+  height: 10vh;
+}
+
+#edit_profile_dropdown p {
+  margin-left: 2%;
+}
+
+#edit_profile_dropdown h3 {
+  margin-left: 1%;
+}
+
+#profile_info img:nth-child(3) {
+  height: 5vh;
+}
+
+#profile_info p {
+  margin: 0;
+  align-self: center;
+}
+
+#edit_profile_dropdown {
+  display: none;
+  margin-left: 4%;
+}
+
+#menu {
+  text-align: center;
+}
+
+#menu img {
+  height: 30vh;
+  margin-top: 3vh;
+  border-radius: 5vh;
+  background-color: #6d97e38c;
+}
+
+#menu h2 {
+  margin: 0; 
+}
+
+/* mine-dyr.html */ 
+
+#mine_dyr {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  margin-top: 5vh;
+  border-top: solid white 1px;
+  border-bottom: solid white 1px;
+  padding: 2vh 0px;
+  background-color: aliceblue;
+}
+
+#mine_dyr img{
+  height: 8vh;
+  justify-self: center;
+  align-self: center;
+  border-radius: 3vh;
+}
+
+#mine_dyr a {
+justify-self: center;
+align-self: center;
+}
+
+#mine_dyr img:nth-last-child(3){
+  background-color: #a9a9a994;
+}
+
+#mine_dyr h2 {
+align-self: center;
+}
+
+#minedyr h1{
+  padding: 0;
+}
+
+.gap {
+  grid-column: 1/4;
+  background-color: white;
+  height: 1vh; 
+  margin: 2vh 0px;
+
+}
+
+
+
+/* opret-dyr.html */ 
+#opret_dyr h1 {
+  font-size: 3vh;
+  padding-bottom: 5%;
+}
+
+#opret_dyr p {
+  margin: 0;
+  font-size: 2.5vh;
+  padding: 0 2vh;
+  margin-bottom: 1%;
+}
+
+#opret_dyr input {
+  font-size: 3vh;
+  border: 1px solid;
+  margin-bottom: 4%;
+}
+
+#opret_dyr textarea {
+  font-size: 3vh; 
+  padding: 0;
+  margin: 0 6%;
+  width: 85%;
+  border: 1px solid;  
+}
+
+#pic_box {
+  display: flex; 
+  justify-content: space-between;
+  margin-top: 2vh;
+}
+
+#pic_box p {
+  margin: 2% 0;
+}
+
+#pic_box img {
+  padding: 0 9%;
+  max-height: 50%;
+}
+
+.save-button {
+  margin: 3% 35%;
+}
+
+.save-button a {
+  text-align: center;
+  font-size: 50px;
+  background-color:#25ff42a6;
+  color: white;
+  padding: 6%;
+  border-radius: 5%;
+}
+
+/* besked_oversigt */
+.oversigt_main
+{
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  margin-top: 5vh;
+  border-top: solid white 1px;
+  border-bottom: solid white 1px;
+  padding: 2vh 0px;
+  background-color: aliceblue;
+}
+
+.oversigt h1 {
+    padding: 0;
+}
+
+.oversigt p{
+  justify-self: center;
+  align-self: center;
+  background-color: red;
+  border-radius: 5vh;
+  padding: 10% 23%;
+  color: white; 
+}
+
+.oversigt h2 {
+  align-self: center;
+  }
+
+.gap {
+  grid-column: 1/4;
+  background-color: white;
+  height: 1vh; 
+  margin: 2vh 0px;
+
+}
+
+.oversigt_main img{
+  height: 8vh;
+  justify-self: center;
+  align-self: center;
+  padding-left: 1vh;
+}
+
+.oversigt_main a {
+  grid-column: 1/4;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  color: #000;
+}
+/* opret_pasning1_2.html */
+#grid_checkbox {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  grid-gap: 2vh;
+}
+
+.container {
+  width: 37vh;
+  margin: 0 auto;
+  height: 10vh;
+  padding: 0;
+  margin-top: 27.5vh;
+  text-align: center;
+}
+
+#grid_checkbox input {
+  height: 60%;
+  width: 28%;
+  justify-self: center;
+}
+
+#grid_checkbox h3 {
+  margin-left: 15%;
+}
+
+.opret_pasning h1 {
+  padding: 1vh 0;
+}
+
+.next_bottom {
+  margin-top: 7%;
+  text-align: center;
+}
+
+.next_bottom a {
+  font-size: 5vh;
+  padding: 4%;
+  border-radius: 10%;
+  background-color: #337ab7;
+  color: white;
+}
+
+/* opret_pasning2_2 */ 
+#opret2_2 p {
+font-size: 2.5vh;
+margin: 0 0 8px;
+margin-left: 2vh;
+}
+
+#opret2_2 input, textarea{
+  color: gray;
+  border: 1px solid black;
+}
+
+#opret2_2 textarea {
+  width: 85%;
+  margin: 0 6%;
+  font-size: 3vh;
+}
+
+.opret_pasning2 h1 {
+  padding: 1vh 0;
+}
+
+.container2{
+  width: 37vh;
+  margin: 0 auto;
+  height: 10vh;
+  padding: 0;
+  margin-top: 4vh;
+  text-align: center;
+  border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+.container2 .progress-bar {
+  background-color: #25ff42a6;
+}
+
+.opret_pasning2 .save-button {
+  text-align: center;
+  margin: 0;
+  margin-top: 7%;
+}
+.opret_pasning2 .save-button a {
+padding: 4% 5%;
+font-size: 5vh;
+border-radius: 10%;
+}
