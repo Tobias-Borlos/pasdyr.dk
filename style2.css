@@ -1,6 +1,5 @@
 body {
     margin: 0 auto;
-    background-color: #F9F0DD;
   }
   
   .container {
@@ -136,12 +135,17 @@ p.dyreprofil-fed {
 
 .pet-profile {
   text-align: center;
-  margin: 0;
+  margin: 4vh 0;
 }
 
 .pet-profile img {
-  max-height: 30vh;
+  max-height: 22vh;
+background-color: lightblue;
+border-radius: 13%;
+}
 
+p {
+  margin: 0;
 }
 
 #wrapper{
