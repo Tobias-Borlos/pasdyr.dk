@@ -1,5 +1,10 @@
 body {
     margin: 0 auto;
+    font-family: 'Permanent Marker', cursive;
+  }
+
+  a {
+    text-decoration: none;
   }
   
   .container {
@@ -142,6 +147,7 @@ p.dyreprofil-fed {
   max-height: 22vh;
 background-color: lightblue;
 border-radius: 13%;
+max-width: 19vh;
 }
 
 p {
