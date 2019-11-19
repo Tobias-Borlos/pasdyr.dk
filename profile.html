@@ -13,7 +13,7 @@
         <img src="gallery/profile.png" alt="profilepic">
         <p>Navn: Jette Paulsen</p> 
         
-        <img src="gallery/edit_symbol.png" alt="edit_symbol" onclick="myFunction()">
+        <img src="gallery/edit_symbol.png" alt="edit_symbol" class="button" id="button">
     </section>
 
     <!--a hidden menu-->
@@ -57,14 +57,16 @@
     </footer>
 
     <script>
-        function myFunction() {
-        var x = document.getElementById("edit_profile_dropdown");
-        if (x.style.display === "none") {
+        var button = document.getElementById('button')
+
+        button.addEventListener('click', function ()
+        {   var x = document.getElementById("edit_profile_dropdown");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else 
             x.style.display = "block";
-        } else {
-            x.style.display = "block";
-        }
-        }
+        
+        })
 
         /* show/hide w3 school */
     </script>
