@@ -1,6 +1,10 @@
 body {
     margin: 0 auto;
-    background-color: #F9F0DD;
+    font-family: 'Permanent Marker', cursive;
+  }
+
+  a {
+    text-decoration: none;
   }
   
   .container {
@@ -82,9 +86,9 @@ max-width: 15px;
 
 .dyreprofil-wrapper {
   display: grid;
-  grid-template-columns: 80% 20%;
+  grid-template-columns: 40% 40% 20%;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  padding-left: 20px;
+  margin: 1vh 3vh;
 }
 
 .dyreprofil-wrapper img {
@@ -126,8 +130,28 @@ a {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
+.overskrift {
+  text-align: center;
+}
+
 p.dyreprofil-fed {
   font-weight: bold;
+}
+
+.pet-profile {
+  text-align: center;
+  margin: 4vh 0;
+}
+
+.pet-profile img {
+  max-height: 22vh;
+background-color: lightblue;
+border-radius: 13%;
+max-width: 19vh;
+}
+
+p {
+  margin: 0;
 }
 
 #wrapper{
