@@ -42,23 +42,32 @@
 </div>
 
 <section class="aftale_popup" onclick="myFunction()">
-  <img src="gallery/aftale_knap.png" alt="håndslag">
+  <img src="gallery/aftale_knap.png" alt="håndslag" id="button">
   <span class="popuptext" id="aftale_window"> 
     <h3> Pasning af: </h3>
     <h4>Fiddo</h4>
     <p>Start: 15/11-2019 12:45</p>
     <p>Slut: 15/11-2019 19:30</p>
     <p>Løn: 100kr/t</p>
+    <a href="beskeder">Gem</a>
     </span> 
 </section>
 
-<script>
 
-    function myFunction() {
-      var popup = document.getElementById("aftale_window");
-      popup.classList.toggle("visibility");
-    }
-    </script>
+<script>
+  var button = document.getElementById('button')
+
+  button.addEventListener('click', function ()
+  {   var x = document.getElementById("aftale_window");
+  if (x.style.display === "block") {
+      x.style.display = "none";
+  } else 
+      x.style.display = "block";
+  
+  })
+
+  /* show/hide */
+</script>
 
 <footer>
   <button onclick="goBack()"><img src="gallery/back.png" alt="arrow"></button>
