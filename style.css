@@ -7,6 +7,10 @@ h1 {
   margin: 0;
 }
 
+p {
+  margin: 0;
+}
+
 /* beskeder.html */
 
   #beskeder .container {
@@ -594,4 +598,240 @@ margin-left: 2vh;
 padding: 4% 5%;
 font-size: 5vh;
 border-radius: 10%;
+}
+
+.dyreprofil-wrapper {
+  display: grid;
+  grid-template-columns: 50%  50%;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  margin: -1vh 0vh 7vh 7vh;
+  grid-gap: 3% 0%;
+}
+
+.dyreprofil-fed h3 {
+  font-weight: bold;
+  font-size: 135%;
+  margin: 7% 0% 11% -3%;
+}
+
+.dyreprofil-fed p {
+  padding-left: 0%;
+  font-size: 1.2em;
+}
+
+.dyreprofil-wrapper img {
+  justify-self: center;
+  align-self: center;
+}
+
+img.edit-symbol {
+  max-width: 15px;
+}
+
+.fortryd-gem {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 20px 0 80px;
+}
+
+img.gallery {
+max-width: 100%;
+}
+
+#wrapper{
+	height:248px;
+	position:relative;
+	color:#fff;
+  text-shadow:rgba(0,0,0,0.1) 2px 2px 0px;	
+  margin-top: -8px;
+  display: grid;
+  justify-content: stretch;
+  justify-items: center;
+}
+
+#slider-wrap{
+	width:350px;
+	height:248px;
+	position:relative;
+	overflow:hidden;
+}
+
+#slider-wrap ul#slider{
+	width:100%;
+	height:100%;
+	
+	position:absolute;
+	top:0;
+  left:0;		
+  padding-left: 0;
+}
+
+#slider-wrap ul#slider li{
+	float:left;
+	position:relative;
+	width:350px;
+	height:248px;	
+}
+
+#slider-wrap ul#slider li > div{
+	position:absolute;
+	top:20px;
+	left:35px;	
+}
+
+#slider-wrap ul#slider li > div h3{
+	font-size:36px;
+	text-transform:uppercase;	
+}
+
+#slider-wrap ul#slider li > div span{
+	font-family: Neucha, Arial, sans serif;
+	font-size:21px;
+}
+
+#slider-wrap ul#slider li i{
+	text-align:center;
+	line-height:400px;
+	display:block;
+	width:100%;
+	font-size:90px;	
+}
+
+
+/*btns*/
+.btns{
+	position:absolute;
+	width:50px;
+	height:60px;
+	top:50%;
+	margin-top:-25px;
+	line-height:57px;
+	text-align:center;
+	cursor:pointer;	
+	background:rgba(0,0,0,0.1);
+	z-index:100;
+	
+	
+	-webkit-user-select: none;  
+	-moz-user-select: none; 
+	-khtml-user-select: none; 
+	-ms-user-select: none;
+	
+	-webkit-transition: all 0.1s ease;
+	-moz-transition: all 0.1s ease;
+	-o-transition: all 0.1s ease;
+	-ms-transition: all 0.1s ease;
+	transition: all 0.1s ease;
+}
+
+.btns:hover{
+	background:rgba(0,0,0,0.3);	
+}
+
+#next{right:-50px; border-radius:7px 0px 0px 7px;}
+#previous{left:-50px; border-radius:0px 7px 7px 7px;}
+#counter{
+	top: 30px; 
+	right:35px; 
+	width:auto;
+	position:absolute;
+}
+
+#slider-wrap.active #next{right:0px;}
+#slider-wrap.active #previous{left:0px;}
+
+
+/*bar*/
+#pagination-wrap{
+	min-width:20px;
+	margin-top:350px;
+	margin-left: auto; 
+	margin-right: auto;
+	height:15px;
+	position:relative;
+	text-align:center;
+}
+
+#pagination-wrap ul {
+	width:100%;
+}
+
+#pagination-wrap ul li{
+	margin: 0 4px;
+	display: inline-block;
+	width:5px;
+	height:5px;
+	border-radius:50%;
+	background:#fff;
+	opacity:0.5;
+	position:relative;
+  top:0;
+  
+  
+}
+
+#pagination-wrap ul li.active{
+  width:12px;
+  height:12px;
+  top:3px;
+	opacity:1;
+	box-shadow:rgba(0,0,0,0.1) 1px 1px 0px;	
+}
+
+
+
+
+/*Header*/
+h1, h2{text-shadow:none; text-align:center;}
+h1{	color: #666; text-transform:uppercase;	font-size:36px;}
+h2{ color: #7f8c8d; font-family: Neucha, Arial, sans serif; font-size:18px; margin-bottom:30px;} 
+
+
+
+
+/*ANIMATION*/
+#slider-wrap ul, #pagination-wrap ul li{
+	-webkit-transition: all 0.3s cubic-bezier(1,.01,.32,1);
+	-moz-transition: all 0.3s cubic-bezier(1,.01,.32,1);
+	-o-transition: all 0.3s cubic-bezier(1,.01,.32,1);
+	-ms-transition: all 0.3s cubic-bezier(1,.01,.32,1);
+	transition: all 0.3s cubic-bezier(1,.01,.32,1);	
+}
+
+.dyreprofil-fortryd a {
+  justify-self: center;
+  align-self: center;
+  text-decoration: none;
+  font-family: 'Permanent Marker', cursive;
+  color: darkgreen;
+}
+
+a:visited {
+  text-decoration: none;
+  font-family: 'Permanent Marker', cursive;
+  color: darkgreen;
+}
+
+a:hover {
+  text-decoration: underline;
+  font-family: 'Permanent Marker', cursive;
+  color: darkgreen;
+}
+
+a:active {
+  text-decoration: underline;
+  font-family: 'Permanent Marker', cursive;
+  color: darkgreen;
+}
+
+.pet-profile {
+  text-align: center;
+  margin: 4vh 0;
+}
+
+.pet-profile img {
+  max-height: 22vh;
+background-color: #6d97e38c;
+border-radius: 13%;
+max-width: 19vh;
 }
