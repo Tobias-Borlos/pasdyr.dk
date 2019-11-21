@@ -49,7 +49,7 @@ body {
     float: left;
     color: #999;
   }
-
+  
   footer{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
@@ -59,53 +59,65 @@ body {
     border-top: 1px solid #000;
     background-color: white;
   }
-
+  
   button {
     background-color: white;
     border: none;
     border-right: solid black 1px
   }
-
+  
   footer img {
     max-width: 55px;
     justify-self: center;
   }
-
+  
   img[alt="profile_icon"]{  
     border-left: 1px black solid;
   }
-
+  
   h2{
     margin: 8px;
   }
-
-.edit-symbol-gallery{
- position: absolute !important;
-max-width: 15px;
-}
-
-.dyreprofil-wrapper {
-  display: grid;
-  grid-template-columns: 40% 40% 20%;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  margin: 1vh 3vh;
-}
-
-.dyreprofil-wrapper img {
-  justify-self: center;
-  align-self: center;
-}
-
-img.edit-symbol {
-  max-width: 15px;
-}
-
-.fortryd-gem {
-display: grid;
-grid-template-columns: 1fr 1fr;
-margin: 20px 0 80px;
-}
-
+  
+  .edit-symbol-gallery{
+    position: absolute !important;
+    max-width: 15px;
+  }
+  
+  .dyreprofil-wrapper {
+    display: grid;
+    grid-template-columns: 50%  50%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin: -1vh 0vh 7vh 7vh;
+    grid-gap: 3% 0%;
+  }
+  
+  .dyreprofil-fed h3 {
+    font-weight: bold;
+    font-size: 135%;
+    margin: 7% 0% 11% -3%;
+  }
+  
+  .dyreprofil-fed p {
+    padding-left: 0%;
+    font-size: 1.2em;
+  }
+  
+  .dyreprofil-wrapper img {
+    justify-self: center;
+    align-self: center;
+  }
+  
+  img.edit-symbol {
+    max-width: 15px;
+  }
+  
+  .fortryd-gem {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px 0 80px;
+  }
+  
 img.gallery {
   max-width: 100%;
 }
@@ -113,6 +125,27 @@ img.gallery {
 a {
   justify-self: center;
   align-self: center;
+  text-decoration: none;
+  font-family: 'Permanent Marker', cursive;
+  color: darkgreen;
+}
+
+a:visited {
+  text-decoration: none;
+  font-family: 'Permanent Marker', cursive;
+  color: darkgreen;
+}
+
+a:hover {
+  text-decoration: underline;
+  font-family: 'Permanent Marker', cursive;
+  color: darkgreen;
+}
+
+a:active {
+  text-decoration: underline;
+  font-family: 'Permanent Marker', cursive;
+  color: darkgreen;
 }
 
 .dyreprofil-button {
@@ -134,9 +167,6 @@ a {
   text-align: center;
 }
 
-p.dyreprofil-fed {
-  font-weight: bold;
-}
 
 .pet-profile {
   text-align: center;
@@ -145,7 +175,7 @@ p.dyreprofil-fed {
 
 .pet-profile img {
   max-height: 22vh;
-background-color: lightblue;
+background-color: #6d97e38c;
 border-radius: 13%;
 max-width: 19vh;
 }
